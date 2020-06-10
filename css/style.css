@@ -1,0 +1,231 @@
+@charset "UTF-8";
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+h5 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+p {
+  color: #727272;
+  margin: 5% 0;
+}
+
+.btn-blue {
+  background-color: #34547A;
+  padding: 10px 30px;
+  transition: all 0.3s;
+}
+
+.btn-blue:hover {
+  background-color: #34547A;
+  transform: scale(1.1);
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.header-page {
+  background-color: #EEEFF1;
+}
+.header-page__logo {
+  font-family: "Revalia", cursive;
+  font-size: 48px;
+  color: #34547A;
+  text-transform: uppercase;
+}
+.header-page .animated:hover {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+@keyframes rubberBand {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scaleX(1.15) scaleY(0.75);
+  }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.header-page div.rubberBand {
+  animation-name: rubberBand;
+}
+.header-page__nav li a {
+  color: #000000;
+  transition: all 0.3s;
+}
+.header-page__nav li a:hover {
+  color: #34547A;
+  box-shadow: 0 2px 20px 0 rgba(52, 83, 122, 0.2);
+  border-radius: 5px;
+}
+.header-page__article {
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.skills h5 {
+  font-size: 32px;
+}
+.skills .progress {
+  margin-bottom: 1%;
+}
+.skills .progress:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.numbers {
+  background-color: #34547A;
+  font-size: 17px;
+}
+.numbers__hover {
+  transition: all 0.5s;
+}
+.numbers__hover:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.numbers p {
+  color: #FFFFFf;
+}
+.numbers p.draft span {
+  font-size: 20px;
+  display: block;
+}
+
+.video {
+  background-color: #EEEFF1;
+}
+.video__title {
+  padding-top: 50px;
+  font-size: 32px;
+}
+.video__player {
+  padding-bottom: 50px;
+}
+.video__player img {
+  transition: all 0.5s;
+}
+.video__player img:hover {
+  cursor: pointer;
+  transform: scale(0.99);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.836);
+}
+
+.projects .container {
+  max-width: 2000px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.projects .container a {
+  display: block;
+  position: relative;
+}
+.projects .container a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(52, 83, 122, 0.8);
+  opacity: 0;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+.projects .container a:before {
+  font-family: "Font Awesome 5 Free";
+  color: #ffffff;
+  font-size: 100px;
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  background: url(icon-path);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.projects .container a:hover:before,
+.projects .container a:hover:after {
+  opacity: 1;
+}
+.projects .container .col-md-3 {
+  overflow: hidden;
+}
+.projects .container a img {
+  transition: all 0.5s;
+}
+.projects .container a:hover img {
+  transform: scale(1.1);
+}
+
+.clients img {
+  transition: all 0.5s;
+}
+.clients img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.form {
+  background-color: #EEEFF1;
+  color: #5F5D5D;
+}
+
+.page_footer {
+  background-color: #34547A;
+  color: #ffffff;
+}
+.page_footer h3 {
+  font-size: 21px;
+}
+.page_footer p {
+  font-size: 13px;
+  color: #ffffff;
+}
+.page_footer img {
+  margin-left: 20px;
+  transition: all 0.5s;
+}
+.page_footer img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  p.draft {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .header-page .pre-article {
+    margin-top: 50px;
+  }
+}
